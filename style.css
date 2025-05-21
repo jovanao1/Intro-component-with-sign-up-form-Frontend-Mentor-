@@ -1,0 +1,147 @@
+body {
+    background-image: url(bg-intro-desktop.png);
+    background-color: rgb(217, 127, 142);
+}
+
+.main {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 80vw;
+}
+
+.a, .b {
+    width: 50%;
+}
+
+.a {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 100%;
+}
+
+.a, #proposition {
+    color: white;
+}
+
+#title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#par {
+    font-size: 23px;
+}
+
+#proposition {
+    display: flex;
+    background-color: rgb(120, 37, 198);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 1); 
+    margin: 10px;
+}
+
+#boldd {
+    font-weight: bold;
+}
+
+#bold2 {
+    color: red;
+    font-weight: bold;
+}
+
+#p {
+    color: grey;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 1); 
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 90%;
+}
+
+input {
+    width: 80%;
+    border-radius: 10%;
+    box-shadow: none;
+    height: 40px;
+}
+
+input[type="submit"] {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(58, 169, 139);
+    border: none;
+    height: 40px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 1); 
+}
+
+input[type="submit"]:active {
+    cursor: pointer;
+}
+
+#warning1, #warning2, #warning3, #warning4, #warning5 {
+    color: red;
+    font-size: 10px;
+    margin-left: auto;
+    font-style: italic;
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    body {
+        background-image: url(bg-intro-mobile.png);
+    } 
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .a {
+        height: 25%;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+    #title {
+        position: relative;
+        margin: 0 auto;
+        font-size: 40px;
+        width: 100%;
+    }
+    #p {
+        position: relative;
+        margin: 0 auto;
+    }
+    .b {
+        height: 58%;
+        width: 100%;
+    }
+    #proposition {
+        height: 20%;
+        position: relative;
+    }
+    form {
+        width: 90%;
+        height: 80%;
+    }
+}
+
